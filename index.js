@@ -31,7 +31,7 @@ module.exports = async function ecsExposePort ({
   const binding = task.networkBindings.find(
     x => x.containerPort === containerPort
   )
-  const remoteIp = task.publicIp
+  const remoteIp = task.publicIpAddress
   const remotePort = binding.hostPort
 
   const keyName = `${task.keyName}.pem`

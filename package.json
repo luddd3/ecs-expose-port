@@ -1,6 +1,6 @@
 {
   "name": "ecs-expose-port",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expose AWS ECS container port locally via SSH",
   "main": "index.js",
   "scripts": {
