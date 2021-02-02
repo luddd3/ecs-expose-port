@@ -1,0 +1,38 @@
+{
+  "name": "ecs-expose-port",
+  "version": "1.0.0",
+  "description": "Expose AWS ECS container port locally via SSH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettierx --write 'index.js'",
+    "format:watch": "onchange 'index.js' -- prettierx --write {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luddd3/ecs-expose-port.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luddd3/ecs-expose-port/issues"
+  },
+  "homepage": "https://github.com/luddd3/ecs-expose-port",
+  "author": "Mathias Lundell",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "7.18.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettierx": "0.14.0",
+    "eslint-plugin-promise": "4.2.1",
+    "onchange": "^7.1.0",
+    "prettierx": "0.14.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.831.0",
+    "get-port": "^5.1.1",
+    "node-ssh-forward": "^0.7.2"
+  }
+}
